@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-header">
+            <h1>Javascript Documentation</h1>
+        </div>
+        <div class="first-section">
+            <h5>JavaScript — Tutorial</h5>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="#Js_Home">JS HOME</a></li>
+                <li><a class="nav-link" href="#Js_Introduction">JS Introduction</a></li>
+                <li><a class="nav-link" href="#Where_To">JS Where To</a></li>
+                <li><a class="nav-link" href="#Js_Output">JS Output</a></li>
+                <li><a class="nav-link" href="#Js_Statements">JS Statement</a></li>
+                <li><a class="nav-link" href="#Js_Syntax">JS Syntax</a></li>
+                <li><a class="nav-link" href="#Js_Comments">JS Comments</a></li>
+                <li><a class="nav-link" href="#Js_Variables">JS Variables</a></li>
+                <li><a class="nav-link" href="#Js_Let">JS Let</a></li>
+                <li><a class="nav-link" href="#Js_Const">JS Const</a></li>
+                <li><a class="nav-link" href="#Js_Opertions">JS Operations</a></li>
+                <li><a class="nav-link" href="#Js_Arithmetic">JS Arithmetic</a></li>
+                <li><a class="nav-link" href="#Js_Assignment">JS Assignment</a></li>
+                <li><a class="nav-link" href="#Js_Datatypes">JS Datatypes</a></li>
+                <li><a class="nav-link" href="#Js_Functions">JS Functions</a></li>
+                <li><a class="nav-link" href="#Js_Objects">JS Objects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-doc">
+        <div>
+            <section class="main-section" id="Js_Home">
+                <div>
+                    <h1>Javascript Tutorial</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript is the world's most popular programming language.</p>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Use the Menu</h2>
+                    <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                    <p>If you have a large screen, the menu will always be present on the left.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Why Study JavaScript?</h2>
+                    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+                    <ol>
+                        <li><strong>Html</strong> to define the content of web pages</li>
+                        <li><strong>CSS</strong> to specify the layout of web pages</li>
+                        <li><strong>Javascript</strong> to program the behavior of web pages</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Introduction">
+                <div>
+                    <h1>Javascript Introduction</h1>
+                </div>
+                <div class="main-content">
+                    <p>This page contains some examples of what JavaScript can do.</p>
+                    <h2>Javascript can change HTML Content</h2>
+                    <p>One of many JavaScript HTML methods is getElementById().</p>
+                    <p>The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
+                    <article>
+                        <h3>Example</h3>
+                        <code>
+                            document.getElementById("demo").innerHTML = "Hello JavaScript";
+                        </code>
+                    </article>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>JavaScript Can Change HTML Attribute Values</h2>
+                    <p>In this example JavaScript changes the value of the src (source) attribute of an <img> tag:</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>JavaScript Can Change HTML Styles (CSS)</h2>
+                    <p>Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
+
+                    <article>
+                        <h3>Example</h3>
+                        <code>
+                            document.getElementById("demo").style.fontSize = "35px";
+                        </code>
+                    </article>
+                </div>
+
+                <div class="main-section-4">    
+                    <h2>JavaScript Can Hide HTML Elements</h2>
+                    <p>Hiding HTML elements can be done by changing the display style: "none"</p>
+
+                    <article>
+                        <h3>Example</h3>
+                        <code>
+                            document.getElementById("demo").style.display = "none";
+                        </code>
+                    </article>
+                </div>
+
+                <div class="main-section-5">    
+                    <h2>JavaScript Can Show HTML Elements</h2>
+                    <p>Hiding HTML elements can be done by changing the display style: "Block</p>
+
+                    <article>
+                        <h3>Example</h3>
+                        <code>
+                            document.getElementById("demo").style.display = "none";
+                        </code>
+                    </article>
+                </div>
+            </section>
+
+            <section class="main-section" id="Where_To">
+                <div>
+                    <h1>JavaScript Where To</h1>
+                </div>
+                <div class="main-content">
+                    <h2>The &lt;script&gt; Tag</h2>
+                    <p>In HTML, JavaScript code is inserted between &lt;script&gt; and  &lt;/script&gt; tags.</p>
+                    <article>
+                        <h3>Example</h3>
+                        <p>
+                            <code>
+                                &lt;script&gt;
+                                document.getElementById("demo").style.display = "none";
+                                &lt;/script&gt;
+                            </code>
+                        </p>
+                    </article>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>JavaScript Functions and Events</h2>
+                    <p>A JavaScript <code>function</code> is a block of JavaScript code, that can be executed when "called" for.</p>
+                    <p>For example, a function can be called when an <strong>event</strong> occurs, like when the user clicks a button.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>JavaScript in &lt;body&gt; or &lt;/head&gt;</h2>
+                    <p>You can place any number of scripts in an HTML document.</p>
+                    <p>Scripts can be placed in the <code>&lt;body&gt;</code>, or in the <code>&lt;/head&gt;</code>  section of an HTML page, or in both.</p>
+                </div>
+
+                <div class="main-section-4">    
+                    <h2>JavaScript in &lt;/head&gt;</h2>
+                    <p>In this example, a JavaScript function is placed in the &lt;head&gt; section of an HTML page.</p>
+                    <p>The function is invoked (called) when a button is clicked:</p>
+                </div>
+                <div class="main-section-4">    
+                    <h2>JavaScript in &lt;body&gt;</h2>
+                    <p>In this example, a JavaScript <code>&lt;function&gt;</code> is placed in the <code>&lt;body&gt;</code> section of an HTML page.</p>
+                    <p>The function is invoked (called) when a button is clicked:</p>
+
+                    <article>
+                        <h3>Example</h3>
+                        <p>
+                            <code>&lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h2&gt;Demo JavaScript in Body &lt;/h2&gt;<br>
+                            &lt;p id="demo"&gtA Paragraph&lt;/p&gt;<br>
+                            &lt;button type="button" onclick="myFunction()"&gt;Try it &lt;/button&gt;<br>
+                            &lt; script &gt;<br>
+                            function myFunction() {<br>
+                                document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+                            }<br>
+                            &lt; /script &gt;<br>
+                            &lt; /body &gt;<br>
+                            &lt; /html &gt;<br>
+                            </code>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Output">
+                <div>
+                    <h1>Javascript Output</h1>
+                </div>
+                <div class="main-content">
+                    <h1>JavaScript Display Possibilities</h1>
+
+                    <ul>
+                        <li>Writing into an HTML element, using <code>innerHTML</code></li>
+                        <li>Writing into the HTML output using <code>document.write()</code>.</li>
+                        <li>Writing into an alert box, using <code>window.alert()</code>.</li>
+                        <li>Writing into the browser console, using <code>console.log()</code>.</li>
+                    </ul>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Using innerHTML</h2>
+                    <p>To access an HTML element, JavaScript can use the document.getElementById(id) method.</p>
+                    <p>The id attribute defines the HTML element. The innerHTML property defines the HTML content:</p>
+
+                <article>
+                    <h3>Example</h3>
+                    <p>
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+                            &lt;p&gt;My First Paragraph&lt;/p&gt;<br>
+                            &lt;p id="demo"&gt;&lt;/p&gt;<br>
+                            &lt;script&gt;<br>
+                            document.getElementById("demo").innerHTML = 5 + 6;<br>
+                            &lt;/script&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </code>
+                    </p>
+                </article>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Statements">
+                <div>
+                    <h1>Javascript Statements</h1>
+
+                    <article>
+                        <h3>Example</h3>
+                        <p>
+                            <code>
+                                let x, y, z;  <span class="comments"> // Statement 1</span><br>
+                                let x = 5;  <span class="comments">// Statement 2</span><br>
+                                let y = 6;  <span class="comments">// Statement 3</span><br>
+                                let z = x + y;  <span class="comments">// Statement 4</span><br>
+                            </code>
+                        </p>
+                    </article>
+                </div>
+                <div class="main-content">
+                    <h1>Javascript Programs</h1>
+                    <p>A computer program is a list of "instructions" to be "executed" by a computer.</p>
+                    <p>In a programming language, these programming instructions are called statements.</p>
+                    <p>A JavaScript program is a list of programming statements.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Javascript Statements</h2>
+                    <p>JavaScript statements are composed of:</p>
+                    <p>Values, Operators, Expressions, Keywords, and Comments.</p>
+                    <p>This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":</p>
+
+                    <article>
+                        <h3>Example</h3>
+                        <p>
+                            <code>
+                                document.getElementById("demo").innerHTML = "Hello Dolly.";
+                            </code>
+                        </p>
+                    </article>
+
+                    <p>Most JavaScript programs contain many JavaScript statements.</p>
+                    <p>The statements are executed, one by one, in the same order as they are written</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Semicolons ;</h2>
+                    <p>Semicolons separate JavaScript statements</p>
+                    <p>Add a semicolon at the end of each executable statement:</p>
+                    
+                    <article>
+                        <h3>Example</h3>
+                        <p>
+                            <code>
+                                let a, b, c;  <span class="comments">// Declare 3 variables</span><br>
+                                a = 5;        <span class="comments">// Assign the value 5 to a</span><br>
+                                b = 6;        <span class="comments">// Assign the value 6 to b</span><br>
+                                c = a + b;    <span class="comments">// Assign the sum of a and b to c</span>
+                            </code>
+                        </p>
+                    </article>
+
+                    <p>When separated by semicolons, multiple statements on one line are allowed:</p>
+
+                    <article>
+                        <p>
+                            <code>
+                                a = 5;<br>
+                                b = 6;<br> 
+                                c = a + b;
+                            </code>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Syntax">
+                <div>
+                    <h1>Javascript Syntax</h1>
+
+                    <article>
+                        <h3>JavaScript syntax is the set of rules, how JavaScript programs are constructed:</h3>
+                        <p>
+                            <code>
+                                <span class="comments">// How to create variables:</span>
+                                var x;  
+                                let y;  
+                                <span class="comments">// How to use variables:</span>
+                                x = 5;
+                                y = 6;
+                                let z = x + y;
+                            </code>
+                        </p>
+                    </article>
+                </div>
+                <div class="main-content">
+                    <h2>Javascript Values</h2>
+                    <p>The JavaScript syntax defines two types of values:</p>
+                    <ul>
+                        <li>Fixed Values</li>
+                        <li>Variable values</li>
+                    </ul>
+                    <p>Fixed values are called <strong>Literals</strong> </p>
+                    <p>Variable values are called <strong>Variables</strong> </p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Javascript Literals</h2>
+                    <p>1.The two most important syntax rules for fixed values are:</p>
+                    <p>2. Strings are text, written within double or single quotes:</p>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Comments">
+                <div>
+                    <h1>Javascript Comments</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.</p>
+                    <p>JavaScript comments can also be used to prevent execution, when testing alternative code.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Single Line Comments</h2>
+                    <p>Single line comments start with  <code>//</code>.</p>
+                    <p>Any text between <code>//</code> and the end of the line will be ignored by JavaScript (will not be executed).</p>
+                    <p>This example uses a single-line comment before each code line:</p>
+                    
+                    <article>
+                        <h3>Example</h3>
+                        <p>
+                            <code>
+                                <span class="comments">// Change Heading</span>
+                                document.getElementById("myH").innerHTML = "My First Page";  
+                                <span class="comments">// Change Paragraph</span>
+                                document.getElementById("myP").innerHTML = "My first paragraph.";
+                            </code>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Variables">
+                <div>
+                    <h1>Javascript Variables</h1>
+                </div>
+                <div class="main-content">
+                    <h2>What are Variables?</h2>
+                    <p>Variables are containers for storing data (storing data values).</p>
+                    <p>In this example, x, y, and z, are variables, declared with the var keyword:</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+
+                    <article>
+                        <h3>Example</h3>
+                        <p>
+                            <code>
+                                var x = 5;  
+                                var y = 6;  
+                                var z = x + y;
+                            </code>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Let">
+                <div>
+                    <h1>Javascript Let</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript is the world's most popular programming language.</p>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Use the Menu</h2>
+                    <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                    <p>If you have a large screen, the menu will always be present on the left.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Why Study JavaScript?</h2>
+                    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+                    <ol>
+                        <li><strong>Html</strong> to define the content of web pages</li>
+                        <li><strong>CSS</strong> to specify the layout of web pages</li>
+                        <li><strong>Javascript</strong> to program the behavior of web pages</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Const">
+                <div>
+                    <h1>Javascript Const</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript is the world's most popular programming language.</p>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Use the Menu</h2>
+                    <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                    <p>If you have a large screen, the menu will always be present on the left.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Why Study JavaScript?</h2>
+                    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+                    <ol>
+                        <li><strong>Html</strong> to define the content of web pages</li>
+                        <li><strong>CSS</strong> to specify the layout of web pages</li>
+                        <li><strong>Javascript</strong> to program the behavior of web pages</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Operators">
+                <div>
+                    <h1>Javascript Operators</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript is the world's most popular programming language.</p>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Use the Menu</h2>
+                    <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                    <p>If you have a large screen, the menu will always be present on the left.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Why Study JavaScript?</h2>
+                    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+                    <ol>
+                        <li><strong>Html</strong> to define the content of web pages</li>
+                        <li><strong>CSS</strong> to specify the layout of web pages</li>
+                        <li><strong>Javascript</strong> to program the behavior of web pages</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Arithmetic">
+                <div>
+                    <h1>Javascript Arithmetic</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript is the world's most popular programming language.</p>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Use the Menu</h2>
+                    <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                    <p>If you have a large screen, the menu will always be present on the left.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Why Study JavaScript?</h2>
+                    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+                    <ol>
+                        <li><strong>Html</strong> to define the content of web pages</li>
+                        <li><strong>CSS</strong> to specify the layout of web pages</li>
+                        <li><strong>Javascript</strong> to program the behavior of web pages</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Assignment">
+                <div>
+                    <h1>Javascript Assignment</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript is the world's most popular programming language.</p>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Use the Menu</h2>
+                    <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                    <p>If you have a large screen, the menu will always be present on the left.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Why Study JavaScript?</h2>
+                    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+                    <ol>
+                        <li><strong>Html</strong> to define the content of web pages</li>
+                        <li><strong>CSS</strong> to specify the layout of web pages</li>
+                        <li><strong>Javascript</strong> to program the behavior of web pages</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Datatypes">
+                <div>
+                    <h1>Javascript Datatypes</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript is the world's most popular programming language.</p>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Use the Menu</h2>
+                    <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                    <p>If you have a large screen, the menu will always be present on the left.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Why Study JavaScript?</h2>
+                    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+                    <ol>
+                        <li><strong>Html</strong> to define the content of web pages</li>
+                        <li><strong>CSS</strong> to specify the layout of web pages</li>
+                        <li><strong>Javascript</strong> to program the behavior of web pages</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Functions">
+                <div>
+                    <h1>Javascript Functions</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript is the world's most popular programming language.</p>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Use the Menu</h2>
+                    <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                    <p>If you have a large screen, the menu will always be present on the left.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Why Study JavaScript?</h2>
+                    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+                    <ol>
+                        <li><strong>Html</strong> to define the content of web pages</li>
+                        <li><strong>CSS</strong> to specify the layout of web pages</li>
+                        <li><strong>Javascript</strong> to program the behavior of web pages</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="main-section" id="Js_Objects">
+                <div>
+                    <h1>Javascript Objects</h1>
+                </div>
+                <div class="main-content">
+                    <p>JavaScript is the world's most popular programming language.</p>
+                    <p>JavaScript is the programming language of the Web.</p>
+                    <p>JavaScript is easy to learn.</p>
+                    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+
+                <div class="main-section-2">    
+                    <h2>Use the Menu</h2>
+                    <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
+                    <p>If you have a large screen, the menu will always be present on the left.</p>
+                </div>
+
+                <div class="main-section-3">    
+                    <h2>Why Study JavaScript?</h2>
+                    <p>JavaScript is one of the 3 languages all web developers must learn:</p>
+                    <ol>
+                        <li><strong>Html</strong> to define the content of web pages</li>
+                        <li><strong>CSS</strong> to specify the layout of web pages</li>
+                        <li><strong>Javascript</strong> to program the behavior of web pages</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
